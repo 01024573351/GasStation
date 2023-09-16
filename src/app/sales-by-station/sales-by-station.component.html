@@ -1,0 +1,21 @@
+<div class="down">
+  <p class="text-center fw-bold">Sales By Station </p>
+  <ng-container *ngFor="let item of station">
+    <div class="stations">
+      <div class="station">
+        <div class="data d-flex justify-content-between">
+          <div class="catch">
+            <span class="me-2"><fa-icon [icon]="faGasPump"></fa-icon></span>
+            <span>{{item.name}}</span>
+          </div>
+          <span>{{item.rate  | number:'1.0':'en-US'}}</span>
+          <span *ngIf='!isNumber(item.rate)' style="font-size: 16px;">{{item.rate}}</span>
+        </div>
+        <div class="main-progress" [ngStyle]="item.rate == 'NM' ? {'background-color': '#B9CDE2'} : {'background-color': '#F4DBD4'}">
+          <div class="part-progress" [ngStyle]="item.rate == 'NM' ? {'background-color': '#B9CDE2'} : {'background-color': '#FF7F5C'}"></div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>
+

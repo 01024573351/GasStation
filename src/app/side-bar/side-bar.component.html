@@ -1,0 +1,17 @@
+<div class="icons d-flex justify-content-between flex-column text-center">
+  <div class="gas-icon" appClick>
+    <fa-icon [icon]="faTint" ></fa-icon>
+  </div>
+  <div class="content-icon p-3">
+    <ul class="list-unstyled d-flex justify-content-around flex-column">
+      <li appClick><fa-icon [icon]="faTachometerAlt" ></fa-icon></li>
+      <li appClick><fa-icon [icon]="faBars" ></fa-icon></li>
+      <li appClick class="active"><fa-icon [icon]="faLayerGroup" ></fa-icon ></li>
+      <li appClick><fa-icon [icon]="faCog"></fa-icon></li>
+      <li appClick><fa-icon [icon]="faBell"></fa-icon></li>
+    </ul>
+  </div>
+  <div class="exit-icon p-3 appClick">
+    <fa-icon class="active" [icon]="faSignOutAlt" ></fa-icon>
+  </div>
+</div>

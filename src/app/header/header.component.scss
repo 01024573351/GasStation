@@ -1,0 +1,61 @@
+.header{
+  background-color: #FFFFFF;
+  height: 10vh;
+  .gas{
+    .monitored , .update{
+      .dot{
+        color: #FF7F5C;
+        font-size: 35px;
+        font-weight: 900;
+      }
+      fa-icon{
+        padding: 10px;
+        font-size: 25px;
+      }
+      span{
+        font-size: 32px;
+      }
+      .text{
+        line-height: 15px;
+        P{
+          font-size: 14px;
+        }
+        span{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .days{
+    background-color: #F9F5F3;
+    color: #3D5161;
+    border-radius: 30px;
+    padding: 0;
+    .day{
+      padding: 5px;
+      width: calc(100% / 3);
+      text-align: center;
+      cursor: pointer;
+    }.active{
+      background-color:#FF7F5C;
+      color: #FFFFFF;
+      border-radius: 30px;
+    }
+  }
+  .date{
+    .start , .end{
+      // width: calc(100% / 2);
+      .shape{
+        color: #FF7F5C;
+      }
+      input{
+        border: none;
+        border-bottom: 3px solid #3D5161;
+        color: #3D5161;
+      }:focus{
+        outline: none;
+      }
+    }
+  }
+
+}

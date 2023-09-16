@@ -1,0 +1,36 @@
+.icons{
+  border-radius: 0 30px 30px 0;
+  height: 100%;
+  background-color: #FF7F5C;
+  .gas-icon{
+    padding: 27px 20px;
+    fa-icon{
+      color: #F4DBD4;
+      font-size: 35px;
+    }
+  }
+  .content-icon{
+    ul{
+      li{
+        padding:20px 0;
+        fa-icon{
+          color: #F4DBD4;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .exit-icon{
+    margin-bottom: 50px;
+    fa-icon{
+      color: #F4DBD4;
+      font-size: 20px;
+    }
+  }
+
+}
+.active{
+  fa-icon{
+    color: #FFFFFF !important;
+  }
+}

@@ -1,0 +1,12 @@
+<div class="boxs " *ngFor="let item of data" >
+  <div class="box ">
+    <p>{{item.number  | number:'1.0':'en-US' }} <span>{{item.discrimination}} </span></p>
+    <p>{{item.kind}} </p>
+    <p>
+      <span *ngIf="item.arrow2 == 'up'" style="color: #00CBC0;"><span class="me-2"><fa-icon [icon]="faSortUp"></fa-icon></span></span>
+      <span *ngIf="item.arrow2 == 'down'" style="color: red;"><span class="me-2" ><fa-icon [icon]="faSortDown"></fa-icon></span></span>
+      <span [ngStyle]="item.arrow2 == 'down' ? {'color': 'red'} : {'color': '#00CBC0'}">{{item.arrow}} </span>
+    </p>
+  </div>
+</div>
+

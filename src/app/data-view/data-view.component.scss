@@ -1,0 +1,30 @@
+.box{
+  background-color: #FFFFFF;
+  color: #3D5161;
+  width: 210px;
+  height: 140px;
+  border-radius: 24px;
+  padding: 20px;
+  p{
+    margin: 0;
+  }
+  p:first-child{
+    font-size: 40px;
+    padding: 0;
+    span{
+      font-size: 17px;
+    }
+  }
+  p:nth-child(2){
+    font-size: 17px;
+    font-weight: bold;
+  }
+  p:last-child{
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+}
+.active{
+  background-color: #F4DBD4;
+}

@@ -1,0 +1,43 @@
+.graph{
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  .up{
+    p{
+
+    }
+    .options{
+      p{
+        padding: 10px;
+        position: relative;
+      }:hover::before{
+        content: '';
+        position: absolute;
+        bottom: -16px;
+        left: 0;
+        height: 3px;
+        background-color:#FF7F5C ;
+        color: #FF7F5C;
+        width: 100%;
+      }
+      .active{
+        padding: 10px;
+        position: relative;
+      }.active::before{
+        content: '';
+        position: absolute;
+        bottom: -16px;
+        left: 0;
+        height: 3px;
+        background-color:#FF7F5C ;
+        color: #FF7F5C;
+        width: 100%;
+      }
+    }
+  }
+  hr{
+    margin: 0;
+  }
+  .down{
+
+  }
+}

@@ -1,0 +1,39 @@
+<div class="header d-flex justify-content-between row align-items-center ">
+  <div class="col-4 gas d-flex justify-content-evenly">
+    <div class="monitored d-flex justify-content-between align-items-center me-2">
+      <div class="dot">.</div>
+      <div><fa-icon [icon]="faGasPump"></fa-icon></div>
+      <span class="mx-2">2/3</span>
+      <div class="text ">
+        <p class="m-0">Monitoried</p>
+        <span class="m-0">Station</span>
+      </div>
+    </div>
+    <div class="update d-flex justify-content-between align-items-center">
+      <div class="dot">.</div>
+      <div ><fa-icon [icon]="faUser"></fa-icon></div>
+      <span class="mx-2">20s</span>
+      <div class="text ">
+        <p class="m-0">Last</p>
+        <span class="m-0">Update</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-3 days d-flex justify-content-center">
+    <div appClickable class="day today active">Today</div>
+    <div appClickable class="day yesterday ">Yesterday</div>
+    <div appClickable class="day last-week ">Last Week</div>
+  </div>
+
+  <div class="col-5 date d-flex justify-content-end">
+    <div class="start me-5">
+      <span class="shape me-3"><fa-icon [icon]="faPlay"></fa-icon></span>
+      <input type="text" placeholder="Start-date-time" #input1 (focus)="changeType(input1)">
+    </div>
+    <div class="end">
+      <span class="shape me-3"><fa-icon [icon]="faStop"></fa-icon></span>
+      <input type="text" placeholder="Start-date-time" #input2 (focus)="changeType(input2)">
+    </div>
+  </div>
+</div>

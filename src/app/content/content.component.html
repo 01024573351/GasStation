@@ -1,0 +1,30 @@
+<div class="content row d-flex justify-content-evenly " >
+  <div class="con-left col-8 ">
+    <div class="data-view d-flex align-content-center justify-content-center ">
+      <app-data-view class="d-flex justify-content-between align-items-center me-3" style="width: 1010px; "></app-data-view>
+    </div>
+
+    <div class="click-way d-flex justify-content-end align-items-center me-3">
+      <div class="catch d-flex" >
+        <div class="graph active" (click)="graph()" appClickable>
+          <span class="me-2"><fa-icon [icon]="faSignal"></fa-icon></span>
+          <span class="">Graph</span>
+        </div>
+        <div class="list" (click)="list()" appClickable>
+          <span class="me-2"><fa-icon [icon]="faStream"></fa-icon></span>
+          <span class="">List</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="data-way-veiw overflow-y-scroll">
+      <app-static *ngIf="open"></app-static>
+      <app-graph  *ngIf="!open"></app-graph>
+    </div>
+  </div>
+
+  <div class="con-right col-3 ">
+    <app-hourly-sales></app-hourly-sales>
+    <app-sales-by-station ></app-sales-by-station>
+  </div>
+</div>
